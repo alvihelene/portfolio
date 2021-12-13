@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.2fr;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
     gap: 0px 0px;
     grid-auto-flow: row dense;
@@ -9,16 +9,20 @@
     justify-items: center;
     align-items: center;
     grid-template-areas:
-      "logo forside portfolio omalvi kontakt"
-      "overskrift overskrift . . ."
-      "tekst tekst knap1 billede billede"
-      "tekst tekst knap2 billede billede"
-      "tekst tekst knap3 billede billede";
+      "logo forside portfolio omalvi kontakt ."
+      ". overskrift overskrift overskrift . ."
+      "tekst tekst knap1 billede billede ."
+      "tekst tekst knap2 billede billede ."
+      "tekst tekst knap3 billede billede .";
     width: 100%;
     height: 100%;
   }
   
-  .logo { grid-area: logo; }
+  .logo {
+  
+    align-self: center;
+    grid-area: logo;
+  }
   
   .forside { grid-area: forside; }
   
@@ -28,33 +32,32 @@
   
   .kontakt { grid-area: kontakt; }
   
-  .overskrift { grid-area: overskrift; }
+  .tekst {
   
-  .tekst { grid-area: tekst; }
+    justify-self: center;
+    grid-area: tekst;
+  }
   
   .billede { grid-area: billede; }
   
-  .knap1 { grid-area: knap1; }
+  .knap1 {
+  
+    justify-self: end;
+    grid-area: knap1;
+  }
   
   .knap2 { grid-area: knap2; }
   
-  .knap3 { grid-area: knap3; }
+  .knap3 {
   
+    justify-self: end;
+    grid-area: knap3;
+  }
   
+  .overskrift {
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    justify-self: start;
+    align-self: start;
+    grid-area: overskrift;
+  }
   
