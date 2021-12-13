@@ -1,0 +1,62 @@
+.container {
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px 320px;
+    grid-template-rows: 80px 200px 100px 100px 100px 100px 100px 100px;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "logo forside portfolio omalvi kontakt"
+      "overskrift overskrift . . ."
+      "tekst tekst knap1 billede billede"
+      "tekst tekst knap2 billede billede"
+      "tekst tekst knap3 billede billede"
+      ". . . . ."
+      ". . . . ."
+      ". . . . .";
+    width: 100%;
+    height: 100%;
+  }
+  
+  .logo { grid-area: logo; }
+  
+  .forside { grid-area: forside; }
+  
+  .portfolio { grid-area: portfolio; }
+  
+  .omalvi { grid-area: omalvi; }
+  
+  .kontakt { grid-area: kontakt; }
+  
+  .overskrift { grid-area: overskrift; }
+  
+  .tekst { grid-area: tekst; }
+  
+  .billede { grid-area: billede; }
+  
+  .knap1 { grid-area: knap1; }
+  
+  .knap2 { grid-area: knap2; }
+  
+  .knap3 { grid-area: knap3; }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
