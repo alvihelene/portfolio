@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: 320px 320px 320px 320px 320px;
-    grid-template-rows: 80px 200px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
     gap: 0px 0px;
     grid-auto-flow: row dense;
     justify-content: center;
@@ -13,10 +13,7 @@
       "overskrift overskrift . . ."
       "tekst tekst knap1 billede billede"
       "tekst tekst knap2 billede billede"
-      "tekst tekst knap3 billede billede"
-      ". . . . ."
-      ". . . . ."
-      ". . . . .";
+      "tekst tekst knap3 billede billede";
     width: 100%;
     height: 100%;
   }
@@ -42,6 +39,7 @@
   .knap2 { grid-area: knap2; }
   
   .knap3 { grid-area: knap3; }
+  
   
   
   
