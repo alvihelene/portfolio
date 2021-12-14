@@ -1,0 +1,121 @@
+
+body {
+  margin: 0px;
+  background-color: #404040;
+
+}
+
+h1 {
+  font-family: 'permanent marker';
+  font-size: 4em;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  align-self: start;
+}
+
+h2 {
+  font-family: 'britannic';
+  font-size: 2em;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  align-self: start;
+}
+
+h3 {
+  font-family: 'verdana';
+  font-size: 1.5em;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  align-self: start;
+}
+
+h4 {
+  font-family: 'verdana';
+  font-size: 1em;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  align-self: start;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+      "overskrift overskrift ."
+      "underoverskift underoverskift ."
+      "tekstoverskrift . knap"
+      "tekst knap1 billede"
+      ". . knap2";
+    height: 100%;
+  }
+  
+  .overskrift {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: overskrift;
+  }
+  
+  .underoverskift {
+  
+    justify-self: center;
+    align-self: start;
+    grid-area: underoverskift;
+  }
+  
+  .tekst {
+  
+    justify-self: center;
+    align-self: center;
+    grid-area: tekst;
+  }
+  
+  .knap1 {
+  
+    justify-self: center;
+    align-self: center;
+    grid-area: knap1;
+  }
+  
+  .knap {
+  
+    justify-self: center;
+    align-self: center;
+    grid-area: knap;
+  }
+  
+  .billede {
+  
+    justify-self: center;
+    align-self: center;
+    grid-area: billede;
+  }
+  
+  .knap2 {
+  
+    justify-self: center;
+    align-self: center;
+    grid-area: knap2;
+  }
+  
+  .tekstoverskrift {
+  
+    justify-self: center;
+    align-self: center;
+    grid-area: tekstoverskrift;
+  }
+  
