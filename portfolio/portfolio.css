@@ -1,63 +1,144 @@
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.2fr;
-    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
-    gap: 0px 0px;
-    grid-auto-flow: row dense;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-      "logo forside portfolio omalvi kontakt ."
-      ". overskrift overskrift overskrift . ."
-      "tekst tekst knap1 billede billede ."
-      "tekst tekst knap2 billede billede ."
-      "tekst tekst knap3 billede billede .";
-    width: 100%;
-    height: 100%;
+                    /** Navigation start**/
+   /** mobile first navigation**/
+
+body {
+  margin: 0px;
+  background-color: #404040;
+
+}
+
+  .navigation {
+      display: grid;
+      grid-template-areas: 
+      'logo'
+      'boks2'
+      'boks3'
+      'boks4'
+      'boks5';
+      padding: auto;    
+      background-color: #03137e;
+      text-align: center; 
   }
-  
-  .logo {
-  
-    align-self: center;
-    grid-area: logo;
+
+
+.alink {    
+    display: block;
+    padding: 1.5em; 
+    font-family: 'britannic';
+    font-size: 1.5em;
+    text-transform: normal;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+margin:auto;}
+
+.boks2:hover, .boks3:hover, .boks4:hover, .boks5:hover {
+  background-color:#72102A;    
+} 
+
+      /** Mobile first navigation, slut**/
+
+      /** Desktop navigation lille, start **/
+
+@media screen and (min-width: 600px) {
+  .navigation {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
   }
-  
-  .forside { grid-area: forside; }
-  
-  .portfolio { grid-area: portfolio; }
-  
-  .omalvi { grid-area: omalvi; }
-  
-  .kontakt { grid-area: kontakt; }
-  
-  .tekst {
-  
-    justify-self: center;
-    grid-area: tekst;
+
+.navigation {
+  display: grid;
+  grid-template-areas: 
+  'logo boks2 boks3 boks4 boks5';
+  padding: auto;    
+  background-color: #03137e;
+  text-align: center; 
+}
+
+/** Font change - rettelse fordi "Om Alvi" bliver grim **/
+  .alink { 
+  font-size: 1em;
   }
-  
-  .billede { grid-area: billede; }
-  
-  .knap1 {
-  
-    justify-self: end;
-    grid-area: knap1;
+}
+
+/** Desktop navigation med normal tekst, for at rette lille tekst **/
+@media screen and (min-width: 850px) {
+  .alink { 
+  font-size: 1.5em;
   }
-  
-  .knap2 { grid-area: knap2; }
-  
-  .knap3 {
-  
-    justify-self: end;
-    grid-area: knap3;
-  }
-  
-  .overskrift {
-  
-    justify-self: start;
-    align-self: start;
-    grid-area: overskrift;
-  }
-  
+}  
+
+    /** Desktop navigation slut**/
+                    /** Navigation slut**/
+
+
+                    /** Forside mobile first start**/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 65px 0px 300px 300px 300px;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  font-family: 'britannic';
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+  grid-template-areas:
+    "overskrift"
+    "underoverskrift"
+    "billede"
+    "tekst"
+    "knap";
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.overskrift {
+  font-family: 'permanent marker';
+  font-size: 2em;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  align-self: start;
+  grid-area: overskrift;
+}
+
+.underoverskrift {
+  font-family: 'britannic';
+  font-size: 1.5em;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
+  align-self: start;
+  grid-area: underoverskrift;
+}
+
+.billede {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: billede;
+}
+
+.tekst {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: tekst;
+}
+
+.knap {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: knap;
+}
+
+
+/** Forside mobile first slut**/
