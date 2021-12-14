@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+    .navigation {
+        display: grid;
+        grid-template-areas: 
+        'logo'
+        'boks2'
+        'boks3'
+        'boks4'
+        'boks5';
+        padding: auto;    
+        background-color: #03137e;
+        text-align: center; 
+    }
+
+  
+.alink {    
+      display: block;
+      padding: 1.5em; 
+      font-family: 'britannic';
+      font-size: 1.5em;
+      text-transform: normal;
+      text-decoration: none;
+      color: white;
+}
+  
+.logo {
+    padding: auto;
+    background-color: #03137e;
+}
+
+.boks2:hover, .boks3:hover, .boks4:hover, .boks5:hover {
+    background-color:#72102A;    
+} 
+
+
+
+  
+
+  
