@@ -1,0 +1,132 @@
+                    /** Navigation start**/
+
+      /** mobile first navigation**/
+
+html {
+  margin: 0px;
+}
+body {
+  margin: 0px;
+
+}
+
+  .navigation {
+      display: grid;
+      grid-template-areas: 
+      'logo'
+      'boks2'
+      'boks3'
+      'boks4'
+      'boks5';
+      padding: auto;    
+      background-color: #03137e;
+      text-align: center; 
+  }
+
+
+.alink {    
+    display: block;
+    padding: 1.5em; 
+    font-family: 'britannic';
+    font-size: 1.5em;
+    text-transform: normal;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+  padding: auto;
+}
+
+.boks2:hover, .boks3:hover, .boks4:hover, .boks5:hover {
+  background-color:#72102A;    
+} 
+
+      /** Mobile first navigation slut**/
+
+      /** Desktop navigation lille start **/
+
+@media screen and (min-width: 600px) {
+  .navigation {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+  }
+
+.navigation {
+  display: grid;
+  grid-template-areas: 
+  'logo boks2 boks3 boks4 boks5';
+  padding: auto;    
+  background-color: #03137e;
+  text-align: center; 
+}
+
+/** Font change - rettelse fordi "Om Alvi" bliver grim **/
+  .alink { 
+  font-size: 1em;
+  }
+}
+
+/** Desktop navigation med normal tekst, for at rette lille tekst **/
+@media screen and (min-width: 850px) {
+  .alink { 
+  font-size: 1.5em;
+  }
+}  
+
+    /** Desktop navigation slut**/
+
+
+                    /** Navigation slut**/
+
+
+                    /** Forside mobile first start**/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 20vh 20vh 20vh;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+    "overskrift"
+    "billede"
+    "tekst"
+    "knap";
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.overskrift {
+
+  justify-self: center;
+  align-self: start;
+  grid-area: overskrift;
+}
+
+.billede {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: billede;
+}
+
+.tekst {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: tekst;
+}
+
+.knap {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: knap;
+}
+
+
+/** Forside mobile first slut**/
