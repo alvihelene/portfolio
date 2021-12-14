@@ -1,3 +1,5 @@
+/** mobile first**/
+
 body {
     margin: 0;
 }
@@ -37,6 +39,32 @@ body {
 
 
 
-  
+/** mindre desktop skærm **/
 
-  
+@media screen and (min-width: 600px) {
+    .navigation {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+.navigation {
+    display: grid;
+    grid-template-areas: 
+    'logo boks2 boks3 boks4 boks5';
+    padding: auto;    
+    background-color: #03137e;
+    text-align: center; 
+}
+
+/** Font change**/
+    .alink { 
+    font-size: 1em;
+    }
+}
+
+/** Fuld desktop skærm, font change **/
+@media screen and (min-width: 850px) {
+    .alink { 
+    font-size: 1.5em;
+    }
+}  
