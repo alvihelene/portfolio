@@ -7,6 +7,41 @@ body {
 
 }
 
+h1 {
+  font-family: 'permanent marker';
+  font-size: 50px;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+  margin-top: 80px;
+}
+
+h2 {
+  font-family: 'britannic';
+  font-size: 35px;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  font-family: 'calibri';
+  font-size: 30px;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+}
+
+h4 {
+  font-family: 'calibri';
+  font-size: 20px;
+  text-transform: normal;
+  text-decoration: none;
+  color: white;
+}
+
+      /** Mobile first navigation, start**/
+
   .navigation {
       display: grid;
       grid-template-areas: 
@@ -15,7 +50,7 @@ body {
       'boks3'
       'boks4'
       'boks5';
-      padding: auto;    
+      padding: auto;
       background-color: #03137e;
       text-align: center; 
   }
@@ -23,16 +58,18 @@ body {
 
 .alink {    
     display: block;
-    padding: 1.5em; 
+    padding: 0.3em; 
     font-family: 'britannic';
-    font-size: 1.5em;
     text-transform: normal;
     text-decoration: none;
+    font-family: 'britannic';
+    font-size: 25px;
     color: white;
+    padding-top: 25px;
 }
 
 .logo {
-margin:auto;}
+margin-top:5px}
 
 .boks2:hover, .boks3:hover, .boks4:hover, .boks5:hover {
   background-color:#72102A;    
@@ -54,22 +91,12 @@ margin:auto;}
   'logo boks2 boks3 boks4 boks5';
   padding: auto;    
   background-color: #03137e;
-  text-align: center; 
-}
-
-/** Font change - rettelse fordi "Om Alvi" bliver grim **/
-  .alink { 
-  font-size: 1em;
-  }
-}
-
-/** Desktop navigation med normal tekst, for at rette lille tekst **/
-@media screen and (min-width: 850px) {
-  .alink { 
-  font-size: 1.5em;
-  }
+  position: fixed;
+  text-align: center;
+  width: 100%;
 }  
 
+}
     /** Desktop navigation slut**/
                     /** Navigation slut**/
 
@@ -78,20 +105,23 @@ margin:auto;}
                     /** Forside**/
 /** Forside mobile first start**/
 
+.overskrift {
+  justify-self: center;
+  align-self: start;
+  grid-area: overskrift;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 65px 0px 300px 300px 200px 200px 200px;
+  grid-template-rows: 10vh 0vh 10vh 10vh 40vh 10vh 10vh 10vh;
   gap: 0px 0px;
-  font-family: 'britannic';
-  font-size: 1.5em;
-  text-decoration: none;
-  color: white;
   grid-template-areas:
     "overskrift"
     "underoverskrift"
-    "billede"
+    "tekstoverskrift"
     "tekst"
+    "forsidebillede"
     "knap"
     "knap1"
     "knap2";
@@ -100,40 +130,38 @@ main {
   margin-top: 0px;
 }
 
-.overskrift {
-  font-family: 'permanent marker';
-  font-size: 2em;
-  text-transform: normal;
-  text-decoration: none;
-  color: white;
-  justify-self: center;
-  align-self: start;
-  grid-area: overskrift;
-}
-
 .underoverskrift {
-  font-family: 'britannic';
-  font-size: 1.5em;
-  text-transform: normal;
-  text-decoration: none;
-  color: white;
   justify-self: center;
   align-self: start;
   grid-area: underoverskrift;
 }
 
-.billede {
-
+.tekstoverskrift {
   justify-self: center;
   align-self: center;
-  grid-area: billede;
+  grid-area: tekstoverskrift;
 }
 
 .tekst {
-
+  justify-self: center;
+  align-self: start;
+  grid-area: underoverskrift;
   justify-self: center;
   align-self: center;
   grid-area: tekst;
+}
+
+
+.forsidebillede {
+  background-image: url("/image.jpg");
+  background-size: contains;
+  width: 300px;
+  height: auto;
+  justify-self: center;
+  align-self: end;
+  grid-area: forsidebillede;
+  border: solid 10px rgb(0, 0, 0);
+
 }
 
 .knap {
@@ -170,24 +198,48 @@ main {
 main{
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 10vh 20vh 20vh 20vh; 
-  gap: 0px 0px;
-
+  grid-template-rows: 150px 100px 424px 100px 100px;
+  grid-auto-columns: 1fr;
   justify-content: center;
   align-content: center;
   grid-template-areas:
     "overskrift overskrift ."
-    "underoverskrift underoverskrift knap"
-    "tekst knap1 billede"
-    ". . knap2";
+    ". underoverskrift knap"
+    "tekstoverskrift knap1 forsidebillede"
+    "tekst . knap2"
+    ". . .";
   height: 100%;
 }
 
-.billede {
 
-  justify-self: center;
-  align-self: center;
-  grid-area: billede;
+.overskrift {
+  justify-self: center; 
+  grid-area: overskrift; 
+}
+
+.underoverskrift {
+  justify-self: center; 
+  grid-area: underoverskrift; 
+}
+
+.tekstoverskrift {
+  justify-self: center; 
+  grid-area: tekstoverskrift; 
+}
+
+.tekst {
+
+  justify-self: left;
+  grid-area: tekst;
+  margin-bottom: 400px;
+}
+
+
+.forsidebillede {
+  background-image: url("/image.jpg");
+  background-size: contains;
+  width: 300px;
+  height: auto;
 }
 
 .knap {
@@ -211,16 +263,74 @@ main{
   grid-area: knap2;
 }
 
-.overskrift {
-  justify-self: center; 
-  align-self: start; 
-  grid-area: overskrift; 
 }
 
-.underoverskrift {
-  justify-self: center; 
-  align-self: start; 
-  grid-area: underoverskrift; 
+/** Forside desktop slut**/
+
+
+
+
+
+/** Om Alvi desktop start**/
+
+.omalvi {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas:
+    "overskrift overskrift ."
+    "underoverskift underoverskift ."
+    "tekst billede0 billede1"
+    "tekst billede2 billede3"
+    ". . .";
+  height: 100%;
+}
+
+.overskrift {
+
+  justify-self: center;
+  align-self: start;
+  grid-area: overskrift;
+}
+
+.underoverskift {
+
+  justify-self: center;
+  align-self: start;
+  grid-area: underoverskift;
+}
+
+.billede0 {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: billede0;
+}
+
+.billede1 {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: billede1;
+}
+
+.billede2 {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: billede2;
+}
+
+.billede3 {
+
+  justify-self: center;
+  align-self: center;
+  grid-area: billede3;
 }
 
 .tekst {
@@ -228,7 +338,4 @@ main{
   justify-self: center;
   align-self: center;
   grid-area: tekst;
-}
-
-
 }
