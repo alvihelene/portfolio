@@ -10,7 +10,6 @@
   h1 {
     font-family: 'permanent marker';
     font-size: 50px;
-    text-transform: normal;
     text-decoration: none;
     color: white;
     margin-top: 90px;
@@ -19,7 +18,6 @@
   h2 {
     font-family: 'britannic';
     font-size: 35px;
-    text-transform: normal;
     text-decoration: none;
     color: white;
     margin-bottom:70px;
@@ -28,15 +26,12 @@
   h3 {
     font-family: 'britannic';
     font-size: 35px;
-    text-transform: normal;
-    text-decoration: none;
     color: white;
   }
   
   h4 {
     font-family: 'M PLUS Rounded 1c';
     font-size: 20px;
-    text-transform: normal;
     text-decoration: none;
     color: white;
   }
@@ -51,7 +46,6 @@
         'boks3'
         'boks4'
         'boks5';
-        padding: auto;
         background-color: #03137e;
         text-align: center; 
     }
@@ -61,12 +55,12 @@
       display: block;
       padding: 0.3em; 
       font-family: 'britannic';
-      text-transform: normal;
       text-decoration: none;
       font-family: 'britannic';
       font-size: 25px;
       color: white;
       padding-top: 25px;
+      width: 100%;
   }
   
   .logo {
@@ -80,7 +74,7 @@
   
         /** Desktop navigation lille, start **/
   
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     .navigation {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -90,7 +84,6 @@
     display: grid;
     grid-template-areas: 
     'logo boks2 boks3 boks4 boks5';
-    padding: auto;    
     background-color: #03137e;
     position: fixed;
     text-align: center;
@@ -131,7 +124,7 @@
     align-self: center;
     grid-area: overskrift;
   }
-  
+
   .underoverskrift {
     justify-self: center;
     align-self: center;
@@ -151,16 +144,13 @@
     align-self: center;
   }
   
-  
   .forsidebillede {
     background-image: url("/image.jpg");
-    background-size: contains;
     width: 300px;
     height: auto;
     justify-self: center;
     align-self: end;
     grid-area: forsidebillede;
-    width: 400;
   }
   
   .knap {
@@ -183,12 +173,12 @@
     align-self: center;
     grid-area: knap2;
   }
-  
+
   /** Forside mobile first slut**/
   
   /** Forside desktop start**/
-  
-  @media screen and (min-width: 600px) {
+
+  @media screen and (min-width: 1000px) {
     .navigation {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -213,7 +203,6 @@
   
   .overskrift {
     justify-self: left;
-    align-self: left;
     grid-area: overskrift; 
   }
   
@@ -223,7 +212,6 @@
 
   .underoverskrift {
     justify-self: left;
-    align-self: left;
     grid-area: underoverskrift;
     margin-bottom: 470px;
   }
@@ -243,7 +231,6 @@
   
   .forsidebillede {
     background-image: url("/image.jpg");
-    background-size: contains;
     width: 300px;
     height: auto;
   }
