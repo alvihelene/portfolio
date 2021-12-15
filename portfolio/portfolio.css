@@ -26,15 +26,15 @@
   }
   
   h3 {
-    font-family: 'calibri';
-    font-size: 30px;
+    font-family: 'britannic';
+    font-size: 35px;
     text-transform: normal;
     text-decoration: none;
     color: white;
   }
   
   h4 {
-    font-family: 'calibri';
+    font-family: 'M PLUS Rounded 1c';
     font-size: 20px;
     text-transform: normal;
     text-decoration: none;
@@ -160,8 +160,7 @@
     justify-self: center;
     align-self: end;
     grid-area: forsidebillede;
-    border: solid 10px rgb(0, 0, 0);
-  
+    width: 400;
   }
   
   .knap {
@@ -232,13 +231,13 @@
   .tekstoverskrift {
     justify-self:left; 
     grid-area: tekstoverskrift; 
-    margin-bottom:320px;
+    margin-bottom:350px;
   }
   
   .tekst {
     justify-self: left;
     grid-area: tekst;
-    margin-bottom: 300px;
+    margin-bottom: 310px;
   }
   
   
