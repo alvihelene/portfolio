@@ -109,18 +109,18 @@ margin-top:5px}
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10vh 0vh 10vh 10vh 40vh 10vh 10vh 10vh;
+  grid-template-columns: 30px 440px 30px;
+  grid-template-rows: 200px 80px 400px 50px 100px 50px 50px 50px 50px 0px;
   gap: 0px 0px;
   grid-template-areas:
-    "overskrift"
-    "underoverskrift"
-    "tekstoverskrift"
-    "tekst"
-    "forsidebillede"
-    "knap"
-    "knap1"
-    "knap2";
+    ". overskrift ."
+    ". underoverskrift ."
+    ". forsidebillede ."
+    ". tekstoverskrift ."
+    ". tekst ."
+    ". knap ."
+    ". knap1 ."
+    ". knap2 .";
   width: 100%;
   margin: auto;
   margin-top: 0px;
@@ -139,7 +139,7 @@ main {
 }
 
 .tekstoverskrift {
-  justify-self: left;
+  justify-self: center;
   align-self: center;
   grid-area: tekstoverskrift;
 }
@@ -147,7 +147,7 @@ main {
 .tekst {
   grid-area: underoverskrift;
   grid-area: tekst;
-  justify-self: left;
+  justify-self: center;
   align-self: center;
 }
 
