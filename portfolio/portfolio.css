@@ -13,7 +13,7 @@ h1 {
   text-transform: normal;
   text-decoration: none;
   color: white;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 h2 {
@@ -22,6 +22,7 @@ h2 {
   text-transform: normal;
   text-decoration: none;
   color: white;
+  margin-bottom:70px;
 }
 
 h3 {
@@ -105,11 +106,6 @@ margin-top:5px}
                     /** Forside**/
 /** Forside mobile first start**/
 
-.overskrift {
-  justify-self: center;
-  align-self: start;
-  grid-area: overskrift;
-}
 
 main {
   display: grid;
@@ -130,25 +126,29 @@ main {
   margin-top: 0px;
 }
 
+.overskrift {
+  justify-self: center;
+  align-self: center;
+  grid-area: overskrift;
+}
+
 .underoverskrift {
   justify-self: center;
-  align-self: start;
+  align-self: center;
   grid-area: underoverskrift;
 }
 
 .tekstoverskrift {
-  justify-self: center;
+  justify-self: left;
   align-self: center;
   grid-area: tekstoverskrift;
 }
 
 .tekst {
-  justify-self: center;
-  align-self: start;
   grid-area: underoverskrift;
-  justify-self: center;
-  align-self: center;
   grid-area: tekst;
+  justify-self: left;
+  align-self: center;
 }
 
 
@@ -197,41 +197,44 @@ main {
 
 main{
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 150px 100px 424px 100px 100px;
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-rows: 250px 424px 100px 0px 0px;
   grid-auto-columns: 1fr;
   justify-content: center;
   align-content: center;
   grid-template-areas:
-    "overskrift overskrift ."
-    ". underoverskrift knap"
-    "tekstoverskrift knap1 forsidebillede"
-    "tekst . knap2"
-    ". . .";
+    ". overskrift . knap ."
+    ". underoverskrift knap1 forsidebillede ."
+    ". tekstoverskrift . knap2 ."
+    ". tekst . . ."
+    ". . . . .";
   height: 100%;
 }
 
 
 .overskrift {
-  justify-self: center; 
+  justify-self: end;
+  align-self: end;
   grid-area: overskrift; 
 }
 
 .underoverskrift {
-  justify-self: center; 
-  grid-area: underoverskrift; 
+  justify-self: left;
+  align-self: left;
+  grid-area: underoverskrift;
+  margin-bottom: 500px;
 }
 
 .tekstoverskrift {
-  justify-self: center; 
+  justify-self:left; 
   grid-area: tekstoverskrift; 
+  margin-bottom:600px;
 }
 
 .tekst {
-
   justify-self: left;
   grid-area: tekst;
-  margin-bottom: 400px;
+  margin-bottom: 550px;
 }
 
 
@@ -243,21 +246,17 @@ main{
 }
 
 .knap {
-
   justify-self: center;
   align-self: center;
   grid-area: knap;
 }
 
 .knap1 {
-
   justify-self: center;
   align-self: center;
   grid-area: knap1;
 }
-
 .knap2 {
-
   justify-self: center;
   align-self: center;
   grid-area: knap2;
@@ -266,9 +265,6 @@ main{
 }
 
 /** Forside desktop slut**/
-
-
-
 
 
 /** Om Alvi desktop start**/
@@ -301,7 +297,7 @@ main{
 .underoverskift {
 
   justify-self: center;
-  align-self: start;
+  align-self: center;
   grid-area: underoverskift;
 }
 
