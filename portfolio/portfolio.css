@@ -1,4 +1,4 @@
-                   /** Navigation start**/
+
 
    /** skrifttyper til alle html sider**/
 
@@ -61,7 +61,6 @@
       font-size: 25px;
       color: white;
       padding-top: 25px;
-      width: 100%;
   }
   
   .logo {
@@ -71,6 +70,8 @@
     background-color:#72102A;    
   } 
   
+                   /** Navigation start**/
+
         /** Mobile first navigation, slut**/
   
 
@@ -117,9 +118,9 @@
       ". knap ."
       ". knap1 ."
       ". knap2 .";
-    width: 100%;
     margin: auto;
     margin-top: 0px;
+    justify-content: center;
   }
   
   .overskrift {
@@ -149,13 +150,18 @@
   
   .forsidebillede {
     background-image: url("/image.jpg");
-    width: 300px;
     height: auto;
     justify-self: center;
     align-self: end;
     grid-area: forsidebillede;
+
   }
-  
+
+  .billede {
+    width: 100%;
+    height: auto;
+  }
+
   .knap {
   
     justify-self: center;
@@ -234,7 +240,6 @@
   
   .forsidebillede {
     background-image: url("/image.jpg");
-    width: 300px;
     height: auto;
   }
   
