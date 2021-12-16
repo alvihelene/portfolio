@@ -1,5 +1,6 @@
                    /** Navigation start**/
-   /** mobile first navigation**/
+
+   /** skrifttyper til alle html sider**/
 
    body {
     margin: 0px;
@@ -64,7 +65,7 @@
   }
   
   .logo {
-  margin-top:5px}
+  margin-top:0}
   
   .boks2:hover, .boks3:hover, .boks4:hover, .boks5:hover {
     background-color:#72102A;    
@@ -72,6 +73,8 @@
   
         /** Mobile first navigation, slut**/
   
+
+
         /** Desktop navigation lille, start **/
   
   @media screen and (min-width: 1000px) {
@@ -243,7 +246,7 @@
   }
   
   .knap1 {
-    justify-self: right;
+    justify-self: center;
     align-self: center;
     grid-area: knap1;
   }
@@ -255,4 +258,5 @@
   
   }
   
-  /** Forside desktop slut**/
+/** Forside desktop slut**/
+
