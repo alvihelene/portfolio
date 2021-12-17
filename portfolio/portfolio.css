@@ -86,7 +86,7 @@
   }
   
   .logo {
-  margin-top:0}
+  margin-top:5px}
   
   .boks2:hover, .boks3:hover, .boks4:hover {
     background-color:#72102A;    
@@ -327,7 +327,7 @@
     .tekstoverskrift {
       justify-self:left; 
       grid-area: tekstoverskrift; 
-      margin-bottom:600px;
+      margin-bottom:650px;
     }
   
     .tekst {
