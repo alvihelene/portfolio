@@ -10,7 +10,7 @@
   
   h1 {
     font-family: 'permanent marker';
-    font-size: 50px;
+    font-size: 4.5vh;
     text-decoration: none;
     color: white;
     margin-top: 90px;
@@ -18,15 +18,15 @@
   
   h2 {
     font-family: 'britannic';
-    font-size: 35px;
+    font-size: 3.5vh;
     text-decoration: none;
     color: white;
-    margin-bottom:70px;
+    margin-bottom:30px;
   }
   
   h3 {
     font-family: 'britannic';
-    font-size: 35px;
+    font-size: 2.5vh;
     color: white;
   }
   
@@ -45,12 +45,34 @@
         'logo'
         'boks2'
         'boks3'
-        'boks4'
-        'boks5';
+        'boks4';
         background-color: #03137e;
         text-align: center; 
     }
-  
+ 
+    
+  .link {
+    font-family: 'permanent marker';
+    font-size: 5vh;
+    text-decoration: none;
+    display: grid;
+    gap: 50px;
+    color: white;
+    display: grid;
+    gap: 10px;
+    padding: 0px;
+    justify-content: center;
+  }
+
+  .link > li > a {
+    color: white;
+    text-decoration: none;
+   }
+
+  .link > li {
+    display: block;
+  }
+
   
   .alink {    
       display: block;
@@ -66,7 +88,7 @@
   .logo {
   margin-top:0}
   
-  .boks2:hover, .boks3:hover, .boks4:hover, .boks5:hover {
+  .boks2:hover, .boks3:hover, .boks4:hover {
     background-color:#72102A;    
   } 
   
@@ -78,7 +100,7 @@
 
         /** Desktop navigation lille, start **/
   
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 900px) {
     .navigation {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -87,7 +109,7 @@
   .navigation {
     display: grid;
     grid-template-areas: 
-    'logo boks2 boks3 boks4 boks5';
+    'logo boks2 boks3 boks4';
     background-color: #03137e;
     position: fixed;
     text-align: center;
@@ -107,7 +129,7 @@
   main {
     display: grid;
     grid-template-columns: 30px 440px 30px;
-    grid-template-rows: 200px 80px 400px 50px 100px 50px 50px 50px 50px 0px;
+    grid-template-rows: 200px 80px 400px 50px 100px 50px 50px 50px 50px 0px 300px 300px 300px 300px 300px 300px 300px 300px;
     gap: 0px 0px;
     grid-template-areas:
       ". overskrift ."
@@ -116,18 +138,83 @@
       ". tekstoverskrift ."
       ". tekst ."
       ". knap ."
+      ". . ."
+      ". . ."
       ". knap1 ."
-      ". knap2 .";
+      ". knap2 ."
+      ". right1 ." 
+      ". left1 ."
+      ". left2 ."
+      ". right2 ."
+      ". right3 ."
+      ". left3 ."
+      ". left4 ."
+      ". right4 ."; 
     margin: auto;
     margin-top: 0px;
     justify-content: center;
   }
+ 
+     .content  > p {
+      color: white;
+      font-size: 20px;
+    }
+
+    .content {
+      width: 300px;
+      margin: auto;
+      display: flex;
+      justify-content:center;
+    }
+
+    .right1 {
+      grid-area: right1;
+    }
+
+    .right2 {
+      grid-area: right2;
+    }
+
+    .right3 {
+      grid-area: right3;
+    }
+
+    .right4 {
+      grid-area: right4;
+    }
+
+    .left1 {
+      grid-area: left1;
+    }
+
+    .left2 {
+      grid-area: left2;
+    }
   
+    .left3 {
+      grid-area: left3;
+    }
+
+    .left4 {
+      grid-area: left4;
+    }
+
+ 
+
+
   .overskrift {
     justify-self: center;
     align-self: center;
     grid-area: overskrift;
   }
+
+  .billede {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
 
   .underoverskrift {
     justify-self: center;
@@ -139,6 +226,13 @@
     justify-self: center;
     align-self: center;
     grid-area: tekstoverskrift;
+  }
+
+
+  .tekstoverskrift > p {
+    font-family: 'permanent marker';
+    font-size: 5vh;
+    color: white;
   }
   
   .tekst {
@@ -187,81 +281,120 @@
   
   /** Forside desktop start**/
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 900px) {
     .navigation {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-  }
+    }
   
-  main{
-    display: grid;
-    grid-template-columns: 8% 28% 28% 28% 8%;
-    grid-template-rows: 250px 424px 100px 0px 0px;
-    grid-auto-columns: 1fr;
-    justify-content: center;
-    align-content: center;
-    grid-template-areas:
-      ". overskrift . knap ."
-      ". underoverskrift knap1 forsidebillede ."
-      ". tekstoverskrift . knap2 ."
-      ". tekst . . ."
-      ". . . . .";
-    height: 100%;
-  }
+    main{
+      display: grid;
+      grid-template-columns: 8% 28% 5% 28% 8%;
+      grid-template-rows: 250px 424px 100px 0px 0px 300px 300px 300px 300px 300px;
+      grid-auto-columns: 1fr;
+      justify-content: center;
+      align-content: center;
+      grid-template-areas:
+        ". overskrift . knap ."
+        ". underoverskrift knap1 forsidebillede ."
+        ". tekstoverskrift . knap2 ."
+        ". tekst . . ."
+        ". . . . ."
+        ". left1 . right1 ."
+        ". left2 . right2 ."
+        ". left3 . right3 ."
+        ". left4 . right4 .";
+      height: 100%;
+    }
+
+
+
+    .overskrift {
+      justify-self: left;
+      grid-area: overskrift; 
+    }
   
+    h1 {
+      font-size: 80px;
+    }
+
+    .underoverskrift {
+      justify-self: left;
+      grid-area: underoverskrift;
+      margin-bottom: 470px;
+    }
   
-  .overskrift {
-    justify-self: left;
-    grid-area: overskrift; 
-  }
+    .tekstoverskrift {
+      justify-self:left; 
+      grid-area: tekstoverskrift; 
+      margin-bottom:600px;
+    }
+  
+    .tekst {
+      justify-self: left;
+      grid-area: tekst;
+      margin-bottom: 550px;
+    }
+
+    .forsidebillede {
+      background-image: url("/image.jpg");
+      height: auto;
+      margin: auto;
+    }
+
+  
+    .knap {
+      justify-self: center;
+      align-self: end;
+      grid-area: knap;
+      margin-bottom: 50px;
+    }
+  
+    .knap1 {
+      justify-self: center;
+      align-self: center;
+      grid-area: knap1;
+    }
+
+    .knap2 {
+      justify-self: center;
+      align-self: center;
+      grid-area: knap2;
+    }
   
   h1 {
-    font-size: 80px;
+    font-family: 'permanent marker';
+    font-size: 9vh;
+    text-decoration: none;
+    color: white;
+    margin-top: 90px;
+  }
+  
+  h2 {
+    font-family: 'britannic';
+    font-size: 5vh;
+    text-decoration: none;
+    color: white;
+    margin-bottom:70px;
   }
 
-  .underoverskrift {
-    justify-self: left;
-    grid-area: underoverskrift;
-    margin-bottom: 470px;
+ h3 {
+    font-family: 'britannic';
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+    margin-bottom:70px;
   }
   
-  .tekstoverskrift {
-    justify-self:left; 
-    grid-area: tekstoverskrift; 
-    margin-bottom:350px;
-  }
+
   
-  .tekst {
-    justify-self: left;
-    grid-area: tekst;
-    margin-bottom: 310px;
+  h4 {
+    font-family: 'M PLUS Rounded 1c';
+    font-size: 3vh;
+    text-decoration: none;
+    color: white;
   }
-  
-  
-  .forsidebillede {
-    background-image: url("/image.jpg");
-    height: auto;
-  }
-  
-  .knap {
-    justify-self: center;
-    align-self: end;
-    grid-area: knap;
-    margin-bottom: 50px;
-  }
-  
-  .knap1 {
-    justify-self: center;
-    align-self: center;
-    grid-area: knap1;
-  }
-  .knap2 {
-    justify-self: center;
-    align-self: center;
-    grid-area: knap2;
-  }
-  
-  }
+}
   
 /** Forside desktop slut**/
 
