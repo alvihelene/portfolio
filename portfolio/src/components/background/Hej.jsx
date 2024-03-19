@@ -1,4 +1,4 @@
-import './Hej.scss'
+import "./Hej.scss"
 
 export default function Hej(){
     return(

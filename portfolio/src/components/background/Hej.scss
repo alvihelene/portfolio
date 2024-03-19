@@ -2,6 +2,9 @@
 
 .hej{
     font-family: v.$cow-font;
-    font-size:400px;
+    font-size:200px;
     transform: rotate(8.5deg);
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
