@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom"
+import './Navbar.scss'
 
 export default function Navbar(){
     return (
-    <h1>Navigationsbar</h1>
+        <nav>
+            <div className="nav-wrap">
+            </div>
+        </nav>
     )
 }

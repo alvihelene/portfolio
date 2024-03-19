@@ -1,4 +1,4 @@
-import './Mountains.css'
+import './Mountains.scss'
 
 
 export default function Mountains(){

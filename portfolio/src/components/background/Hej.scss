@@ -1,0 +1,7 @@
+@use "../../styling/Variables.scss" as v;
+
+.hej{
+    font-family: v.$cow-font;
+    font-size:400px;
+    transform: rotate(8.5deg);
+}
