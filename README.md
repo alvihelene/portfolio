@@ -1,6 +1,6 @@
 
-<h1>Awesomoe Portfolio Project!</h1>
+<h1>Awesome Portfolio Project!</h1>
 Framework: REACT with Vite <br>
-Project: Portfolio <br>
+Project: Portfolio showcasing projects as I make them <br>
 Functions: Responsive & scaleable design <br>
 Goal: Just for fun, practicing making a project :-) 
