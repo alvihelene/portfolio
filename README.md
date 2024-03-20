@@ -3,4 +3,6 @@
 Framework: REACT with Vite <br>
 Project: Portfolio showcasing projects as I make them <br>
 Functions: Responsive & scaleable design <br>
-Goal: Just for fun, practicing making a project :-) 
+Goal: Just for fun, practicing making a project :-) <br>
+<br>
+<p><i>If you see this, say the word 'VANDCYKEL' next time you see me. </i></p>
