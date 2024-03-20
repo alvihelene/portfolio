@@ -13,9 +13,14 @@ export default function Navbar(){
     return (
         <nav>
             <div className="nav-wrap">
-            {navLinks.map((link, index) => (
-                    <Link key={index} to={link.to}>{link.label}</Link>
-                ))}
+                <div className="left">
+                    <Link to="/">{navLinks[0].label}</Link>
+                </div>
+                <div className="right">
+                    {navLinks.slice(1).map((link, index) => (
+                        <Link key={index} to={link.to}>{link.label}</Link>
+                    ))}
+                </div>
             </div>
         </nav>
     );
