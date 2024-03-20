@@ -1,13 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Mountains from "../components/background/Mountains";
 import Navbar from "../nav/Navbar";
-import Hej from "../components/background/Hej";
 
 export default function Router() {
     return (
         <BrowserRouter> 
             <Navbar />
-            <Mountains />
                 <Routes>    
                     <Route path="/" element={<Home />} />
                     <Route path="/portfolio" element={<Portfolio />} />
