@@ -1,0 +1,19 @@
+@use "../styling/Variables.scss" as v;
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: v.$secondary-font;
+    color: v.$white;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: v.$black;
+}
