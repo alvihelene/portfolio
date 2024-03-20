@@ -1,6 +1,6 @@
 @use "../styling/Variables.scss" as v;
 
-$navbar-spacing: 5rem; // Equivalent to 24 pixels
+$navbar-spacing: 5rem;
 
 .nav-wrap {
     position: fixed;
@@ -12,7 +12,7 @@ $navbar-spacing: 5rem; // Equivalent to 24 pixels
     color: v.$white;
     padding: 2rem;
     z-index: 10;
-    font-size:1.8rem;
+    font-size: 1.8rem;
 
     .left {
         flex: 1;
@@ -23,6 +23,54 @@ $navbar-spacing: 5rem; // Equivalent to 24 pixels
         justify-content: flex-end;
         align-items: center;
         gap: 5rem; 
+    }
+
+    .burger-menu {
+        display: none; 
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        padding:0px;
+        margin-top:2rem;
+        font-size:1.4rem;
+
+        .right {
+            display: none; 
+        }
+
+        .burger-menu {
+            display: flex; 
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .burger-icon {
+            background-image: url('../content/gfx/burger-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 35px; 
+            height: 35px;
+        }
+
+        .burger-menu-items {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: v.$black;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .burger-menu-items a {
+            margin-bottom: 0.5rem;
+        }
+
+        .burger-menu.active .burger-menu-items {
+            display: flex;
+        }
     }
 }
 

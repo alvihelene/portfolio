@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom"
-import "./Navbar.scss"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.scss";
 
-export default function Navbar(){
+export default function Navbar() {
+    const [isActive, setIsActive] = useState(false);
 
     const navLinks = [
         { to: "/", label: "Alvi Møller" },
@@ -16,10 +18,33 @@ export default function Navbar(){
                 <div className="left">
                     <Link to="/">{navLinks[0].label}</Link>
                 </div>
-                <div className="right">
-                    {navLinks.slice(1).map((link, index) => (
-                        <Link key={index} to={link.to}>{link.label}</Link>
-                    ))}
+                <div className={`right ${isActive ? "active" : ""}`}>
+                    {!isActive && (
+                        <>
+                            {navLinks.slice(1).map((link, index) => (
+                                <Link key={index} to={link.to}>
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </>
+                    )}
+                </div>
+                <div
+                    className={`burger-menu ${isActive ? "active" : ""}`}
+                    onClick={() => setIsActive(!isActive)}
+                >
+                    <div className="burger-icon"></div>
+                    <div className="burger-menu-items">
+                        {isActive && (
+                            <>
+                                {navLinks.slice(1).map((link, index) => (
+                                    <Link key={index} to={link.to}>
+                                        {link.label}
+                                    </Link>
+                                ))}
+                            </>
+                        )}
+                    </div>
                 </div>
             </div>
         </nav>
