@@ -10,6 +10,7 @@ export default function Mountains(){
             <div className="triangle-container">
                 <div className="triangle1"></div>
                 <div className="triangle2"></div>
+                <div className="triangle3"></div>
             </div>
         </div>
         </>
