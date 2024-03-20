@@ -1,11 +1,17 @@
 import "./Mountains.scss"
+import Hej from "./Hej";
 
 
 export default function Mountains(){
     return(
         <>
-        <div className="background"></div>
-            <div className="triangle"></div>
+        <div className="background">
+            <Hej />
+            <div className="triangle-container">
+                <div className="triangle1"></div>
+                <div className="triangle2"></div>
+            </div>
+        </div>
         </>
     );
 }

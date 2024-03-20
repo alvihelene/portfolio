@@ -2,10 +2,20 @@
 
 .hej{
     font-family: v.$cow-font;
-    font-size:200px;
+    font-size:40rem;
     transform: rotate(8.5deg);
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     background-color: transparent; 
+    z-index: 1; 
+    position: absolute;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 20rem;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 8rem; 
+    }
 }

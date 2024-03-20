@@ -8,7 +8,6 @@ export default function Router() {
         <BrowserRouter> 
             <Navbar />
             <Mountains />
-            <Hej />
                 <Routes>    
                     <Route path="/" element={<Home />} />
                     <Route path="/portfolio" element={<Portfolio />} />
