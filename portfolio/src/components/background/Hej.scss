@@ -1,21 +1,14 @@
 @use "../../styling/Variables.scss" as v;
 
-.hej{
-    font-family: v.$cow-font;
-    font-size:25rem;
-    transform: rotate(8.5deg);
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background-color: transparent; 
-    z-index: 1; 
-    position: absolute;
-
-    @media screen and (max-width: 1440px) {
-        font-size: 20rem;
-    }
-
-    @media screen and (max-width: 700px) {
-        font-size: 8rem; 
-    }
+.hej {
+  font-family: v.$cow-font;
+  font-size: 30vw;
+  transform: rotate(8.5deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
 }
