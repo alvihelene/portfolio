@@ -1,11 +1,11 @@
 @use "../../styling/Variables.scss" as v;
 
-.portfolio {
+.contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   
-  .portfolio-header {
+  .contact-header {
       font-family: v.$secondary-font;
       font-size: 10rem;
       color: v.$white;

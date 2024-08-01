@@ -5,7 +5,7 @@ import Hej from "./Hej";
 export default function Mountains(){
     return(
         <>
-        <div className="background">
+        <div id="home" className="background">
             <Hej />
             <div className="mountain-container">
                 <div className="mountain1"></div>

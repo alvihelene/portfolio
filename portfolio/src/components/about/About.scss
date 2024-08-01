@@ -1,15 +1,14 @@
 @use "../../styling/Variables.scss" as v;
 
-.portfolio {
+.about {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   
-  .portfolio-header {
+  .about-header {
       font-family: v.$secondary-font;
       font-size: 10rem;
       color: v.$white;
       margin: 2rem;
     }
 }
-    
