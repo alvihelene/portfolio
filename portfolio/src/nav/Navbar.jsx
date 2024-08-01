@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.scss";
 
 export default function Navbar() {
@@ -7,7 +8,7 @@ export default function Navbar() {
 
     const navLinks = [
         { to: "/", label: "Alvi Møller" },
-        { to: "/portfolio", label: "Portfolio" },
+        { to: "portfolio", label: "Portfolio" },
         { to: "/about", label: "Om" },
         { to: "/contact", label: "Kontakt" },
     ];
@@ -19,9 +20,12 @@ export default function Navbar() {
                     <Link to="/">{navLinks[0].label}</Link>
                 </div>
                 <div className={`right ${isActive ? "active" : ""}`}>
-                    {!isActive && (
+                {!isActive && (
                         <>
-                            {navLinks.slice(1).map((link, index) => (
+                            <ScrollLink to="portfolio" smooth={true} duration={500}>
+                                Portfolio
+                            </ScrollLink>
+                            {navLinks.slice(2).map((link, index) => (
                                 <Link key={index} to={link.to}>
                                     {link.label}
                                 </Link>
