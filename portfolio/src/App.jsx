@@ -1,21 +1,21 @@
-import Navbar from './nav/Navbar'
-import Mountains from './components/background/Mountains'
-import Portfolio from './components/portfolio/Portfolio'
-import About from './components/about/About'
-import Router from './router/Router'
-import Contact from './components/contact/Contact'
+import Navbar from "./nav/Navbar";
+import Mountains from "./components/background/Mountains";
+import Portfolio from "./components/portfolio/Portfolio";
+import About from "./components/about/About";
+import Router from "./router/Router";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Mountains />
       <Portfolio />
       <About />
       <Contact />
       <Router />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

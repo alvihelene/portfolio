@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav>
       <div className="nav-wrap">
         <div className="left">
-        <ScrollLink to="home" smooth={true} duration={500}>
+          <ScrollLink to="home" smooth={true} duration={500}>
             Alvi Møller
           </ScrollLink>
         </div>

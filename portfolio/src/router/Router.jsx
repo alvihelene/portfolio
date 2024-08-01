@@ -5,7 +5,6 @@ import About from "../components/about/About";
 import Mountains from "../components/background/Mountains";
 import Contact from "../components/contact/Contact";
 
-
 export default function Router() {
   return (
     <BrowserRouter>
@@ -19,4 +18,3 @@ export default function Router() {
     </BrowserRouter>
   );
 }
-
