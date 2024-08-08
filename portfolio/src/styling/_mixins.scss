@@ -1,0 +1,14 @@
+@use './Variables.scss' as v;
+
+@mixin section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+@mixin section-header {
+    font-family: v.$secondary-font;
+    font-size: v.$h1-font-size;
+    color: v.$white;
+    margin: 2rem;
+}

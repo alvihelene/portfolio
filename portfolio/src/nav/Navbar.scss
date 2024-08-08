@@ -2,83 +2,89 @@
 
 $navbar-spacing: 2rem;
 
-.nav-wrap {
-  position: fixed;
-  top: 0;
-  left: $navbar-spacing;
-  right: $navbar-spacing;
-  display: flex;
-  font-family: v.$secondary-font;
-  color: v.$white;
-  padding: 2rem;
-  z-index: 10;
-  font-size: 1.4rem;
-  letter-spacing: 0.1rem;
+.navbar {
+  &__wrap {
+    position: fixed;
+    top: 0;
+    left: $navbar-spacing;
+    right: $navbar-spacing;
+    display: flex;
+    font-family: v.$secondary-font;
+    color: v.$white;
+    padding: 2rem;
+    z-index: 10;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
 
-  .left {
+  &__left {
     flex: 1;
   }
 
-  .right {
+  &__right {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 3rem;
   }
 
-  .burger-menu {
+  &__burger-menu {
     display: none;
+
+    &--active {
+      .navbar__burger-menu-items {
+        display: flex;
+      }
+    }
+  }
+
+  &__burger-icon {
+    background-image: url("../content/gfx/burger-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+  }
+
+  &__burger-menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: v.$black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    a {
+      margin-bottom: 0.5rem;
+    }
   }
 
   @media screen and (max-width: 700px) {
-    padding: 0px;
-    margin-top: 2rem;
-    font-size: 1.4rem;
+    &__wrap {
+      padding: 0px;
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
 
-    .right {
+    &__right {
       display: none;
     }
 
-    .burger-menu {
+    &__burger-menu {
       display: flex;
       align-items: center;
       cursor: pointer;
     }
-
-    .burger-icon {
-      background-image: url("../content/gfx/burger-icon.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 35px;
-      height: 35px;
-    }
-
-    .burger-menu-items {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: v.$black;
-      padding: 1rem;
-      border-radius: 0.5rem;
-    }
-
-    .burger-menu-items a {
-      margin-bottom: 0.5rem;
-    }
-
-    .burger-menu.active .burger-menu-items {
-      display: flex;
-    }
   }
 }
 
-nav a {
+.navbar a {
   text-decoration: none;
   color: inherit;
 }
 
-nav a:hover {
-  color: v.$black;
+.navbar a:hover {
+  color: v.$secondary-pink;
 }

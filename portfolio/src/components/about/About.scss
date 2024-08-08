@@ -1,14 +1,10 @@
 @use "../../styling/Variables.scss" as v;
+@use "../../styling/mixins.scss" as m;
 
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+  @include m.section;
   
-  .about-header {
-      font-family: v.$secondary-font;
-      font-size: v.$h1-font-size;
-      color: v.$white;
-      margin: 2rem;
+  &__header {
+    @include m.section-header;
     }
 }

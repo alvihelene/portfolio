@@ -1,15 +1,10 @@
 @use "../../styling/Variables.scss" as v;
+@use "../../styling/mixins.scss" as m;
 
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  
-  .contact-header {
-      font-family: v.$secondary-font;
-      font-size: v.$h1-font-size;
-      color: v.$white;
-      margin: 2rem;
-    }
+  @include m.section;
+
+  &__header {
+    @include m.section-header;
+  }
 }
-    
