@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="navbar__wrap">
         <div className="navbar__left">
           <ScrollLink to="home" smooth={true} duration={500}>
-            Alvi Møller
+            Alvi Vilholm
           </ScrollLink>
         </div>
         <div className={`navbar__right ${isActive ? "navbar__right--active" : ""}`}>
